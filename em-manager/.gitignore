@@ -1,7 +1,0 @@
-*.iml
-.idea/
-rebel.xml
-/src/main/webapp/upload
-/logs
-/target
-resources-dev.properties

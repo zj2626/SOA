@@ -31,7 +31,6 @@
         <module>em-manager-dao</module>
         <module>em-manager-interface</module>
         <module>em-manager-service</module>
-        <module>em-manager-web</module>
     </modules>
 
     <build>

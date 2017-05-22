@@ -1,5 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
 *.iml
-.idea/
+/.idea
 rebel.xml
 /src/main/webapp/upload
 /logs
