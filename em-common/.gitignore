@@ -1,4 +1,4 @@
-/*.iml
+*.iml
 .idea/
 rebel.xml
 /src/main/webapp/upload

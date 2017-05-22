@@ -12,13 +12,13 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency> <!--依赖dao-->
-            <artifactId>em-manager-dao</artifactId>
+        <dependency> <!--依赖interface-->
+            <artifactId>em-manager-interface</artifactId>
             <groupId>com.em</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency> <!--依赖interface-->
-            <artifactId>em-manager-interface</artifactId>
+        <dependency> <!--依赖dao-->
+            <artifactId>em-manager-dao</artifactId>
             <groupId>com.em</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
