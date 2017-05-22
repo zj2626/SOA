@@ -1,8 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
-*.iml
-/.idea
-rebel.xml
-/src/main/webapp/upload
-/logs
-/target
-resources-dev.properties
+
+#任意目录下的任意以.iml结尾的文件
+**/**.iml
+#任意目录下的.idea文件
+**/.idea
+**/rebel.xml
+#任意target目录
+**/target

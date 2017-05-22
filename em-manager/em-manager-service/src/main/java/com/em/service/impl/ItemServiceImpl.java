@@ -24,6 +24,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public TbItem getItemById(long itemId) {
+        System.out.println("BBBB");
         //根据主键查询
         //TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
         TbItemExample example = new TbItemExample();

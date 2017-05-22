@@ -6,7 +6,7 @@
 
 ####最初时间: 2017-05-21
 
-####涉及技术: spring, springmvc, mybatis ...
+####涉及技术: spring, springmvc, mybatis, dubbo, zookeeper
 
 ####启动:
 
@@ -16,15 +16,18 @@
 
 
 >    2. 模块介绍:
->        1.SOA: 根模块, common和manager继承了该模块, 此模块中配置了所有的依赖的版本信息(并非依赖本身)
->        2.common:工具类模块,存放全局工具类
->        3.manager: 项目模块
->            3.1: dao: 持久层,直接操作数据库
->            3.2: interface: service接口层
->            3.3: pojo: 持久化类,与数据库中表一一对应
->            3.4: service: 业务操作层, 实现接口
->            3.5: web: 控制层, 书写controller
->        4.generatorSqlmapCustom:  MyBatis逆向工程生成pojo的简单工具
+```aidl
+        1.SOA: 根模块, common和manager继承了该模块, 此模块中配置了所有的依赖的版本信息(并非依赖本身)
+        2.common:工具类模块,存放全局工具类
+        3.manager: 项目模块
+        3.1: dao: 持久层,直接操作数据库
+        3.2: interface: service接口层
+        3.3: pojo: 持久化类,与数据库中表一一对应
+        3.4: service: 业务操作层, 实现接口
+        4: web: 控制层, 书写controller
+        5.generatorSqlmapCustom:  MyBatis逆向工程生成pojo的简单工具
+```
+
         
 ![](http://okow3aoov.bkt.clouddn.com/git_aos_2.png)
  
@@ -40,3 +43,5 @@
 >    5. 启动项目, 可以默认的启动按钮(如果装有热部署插件,也可以), 如果出现下面的日志信息表示启动成功
 
 ![](http://okow3aoov.bkt.clouddn.com/git_aos_5.png)
+
+更新ing ...

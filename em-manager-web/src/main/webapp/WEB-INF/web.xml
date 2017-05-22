@@ -5,22 +5,7 @@
          version="3.1">
     <display-name>Archetype Created Web Application</display-name>
 
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>
-            org.springframework.web.context.request.RequestContextListener
-        </listener-class>
-    </listener>
-
-    <!--初始化spring容器-->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
-            classpath:spring/applicationContext-*.xml
-        </param-value>
-    </context-param>
+    <!--  不需要初始化spring容器-->
 
     <!-- shiro 安全过滤器 -->
     <!--<filter>-->
