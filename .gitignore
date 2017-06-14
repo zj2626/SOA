@@ -2,6 +2,7 @@
 
 #任意目录下的任意以.iml结尾的文件
 **/*.iml
+**/.settings
 #任意目录下的.idea文件
 **/.idea
 **/rebel.xml
