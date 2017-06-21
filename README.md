@@ -12,7 +12,7 @@
 
 >    1. 导入分别项目模块, 只需要导入其中三个模块即可, 其中manager中的子模块会自动导入
 
-![](http://okow3aoov.bkt.clouddn.com/git_aos_1.png)
+![](http://okow3aoov.bkt.clouddn.com/git_aos_1.png?imageView2/1/w/600/h/450)
 
 
 >    2. 模块介绍:
@@ -24,24 +24,24 @@
         3.2: interface: service接口层
         3.3: pojo: 持久化类,与数据库中表一一对应
         3.4: service: 业务操作层, 实现接口
-        4: web: 控制层, 书写controller
+        4: web: 控制层, 书写controller (目前web层已经不在manager模块下, 下面图片有误)
         5.generatorSqlmapCustom:  MyBatis逆向工程生成pojo的简单工具
 ```
 
         
-![](http://okow3aoov.bkt.clouddn.com/git_aos_2.png)
+![](http://okow3aoov.bkt.clouddn.com/git_aos_2.png?imageView2/1/w/600/h/450)
  
 >   3. 查看Modules编译器配置是否正常 (正确的配置如图)
 
-![](http://okow3aoov.bkt.clouddn.com/git_aos_3.png)
+![](http://okow3aoov.bkt.clouddn.com/git_aos_3.png?imageView2/1/w/600/h/450)
 
 >    4. 添加tomcat的maven插件,准备启动项目
 
-![](http://okow3aoov.bkt.clouddn.com/git_aos_4.png)
+![](http://okow3aoov.bkt.clouddn.com/git_aos_4.png?imageView2/1/w/600/h/450)
 
 
 >    5. 启动项目, 可以默认的启动按钮(如果装有热部署插件,也可以), 如果出现下面的日志信息表示启动成功
 
-![](http://okow3aoov.bkt.clouddn.com/git_aos_5.png)
+![](http://okow3aoov.bkt.clouddn.com/git_aos_5.png?imageView2/1/w/600/h/450)
 
 更新ing ...
