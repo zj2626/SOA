@@ -40,6 +40,8 @@
         <!--<property name="maxPoolPreparedStatementPerConnectionSize"-->
         <!--value="${druid.maxPoolPreparedStatementPerConnectionSize}"/>-->
     </bean>
+
+    <!--配置mybatis的SqlSessionFactoryBean-->
     <bean class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--数据库连接池-->
         <property name="dataSource" ref="dataSource"/>

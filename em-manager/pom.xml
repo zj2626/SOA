@@ -26,6 +26,14 @@
         </repository>
     </repositories>
 
+    <dependencies>
+        <dependency>
+            <artifactId>em-common</artifactId>
+            <groupId>com.em</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <modules> <!--子模块-->
         <module>em-manager-pojo</module>
         <module>em-manager-dao</module>

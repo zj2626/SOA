@@ -5,6 +5,9 @@ import com.em.pojo.TbItem;
 import com.em.pojo.TbItemExample;
 import com.em.pojo.TbItemExample.Criteria;
 import com.em.service.ItemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import common.EasyUIDdataGridResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +27,6 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public TbItem getItemById(long itemId) {
-        System.out.println("BBBB");
         //根据主键查询
         //TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
         TbItemExample example = new TbItemExample();
@@ -37,5 +39,24 @@ public class ItemServiceImpl implements ItemService {
             return list.get(0);
         }
         return null;
+    }
+
+    @Override
+    public EasyUIDdataGridResult getItemList(int page, int rows) {
+        TbItemExample itemExample = new TbItemExample();
+        //设置分页信息
+        PageHelper.startPage(page, rows);
+
+        //查询
+        List<TbItem> list = itemMapper.selectByExample(itemExample);
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        long total = pageInfo.getTotal();
+
+        //获取结果
+        EasyUIDdataGridResult result = new EasyUIDdataGridResult();
+        result.setRows(list);
+        result.setTota(total);
+
+        return result;
     }
 }
