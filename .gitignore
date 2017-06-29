@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 #任意目录下的任意以.iml结尾的文件
+**/**/*.iml
 **/*.iml
 **/logs
 **/.settings
