@@ -20,7 +20,7 @@ public class TbItem implements Serializable{
 
     private Long cid;
 
-    private Byte status;
+    private Byte status; //1正常 2下架 3删除
 
     private Date created;
 
