@@ -14,22 +14,12 @@
     <context:property-placeholder location="classpath:conf/resources.properties"/>
 
     <!--扫描-->
-    <context:component-scan base-package="com.em.controller"/>
+    <context:component-scan base-package="com.portal.controller"/>
     <!--注解驱动 (包含处理器映射器和处理器适配器)-->
     <mvc:annotation-driven/>
 
     <!--配置资源映射-->
-    <mvc:resources mapping="/css/**" location="/css/"/>
-    <mvc:resources mapping="/js/**" location="/js/"/>
     <mvc:resources mapping="/resources/**" location="classpath:/static/"/>
-
-    <!--多媒体解析器-->
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!--设置默认编码-->
-        <property name="defaultEncoding" value="UTF-8"/>
-        <!--设置文件上传最大值5MB-->
-        <property name="maxUploadSize" value="5242880"/>
-    </bean>
 
     <!--视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -39,8 +29,7 @@
     </bean>
 
     <!-- 引用服务 -->
-    <dubbo:application name="em-manager-web"/>
+    <dubbo:application name="em-portal-web"/>
     <dubbo:registry protocol="zookeeper" address="zookeeper://115.159.40.33:2181"/>
-    <dubbo:reference interface="com.em.service.ItemService" id="itemService"/>
-    <dubbo:reference interface="com.em.service.ItemCatService" id="itemCatService"/>
+    <!--<dubbo:reference interface="com.em.service.ItemService" id="itemService"/>-->
 </beans>
