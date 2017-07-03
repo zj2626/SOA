@@ -35,6 +35,7 @@
     <orderEntry type="module" module-name="em-common" />
     <orderEntry type="library" name="Maven: com.github.kischang:fastdfs-client:0.1" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
+    <orderEntry type="module" module-name="em-content-interface" />
     <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:jsp-api:2.0" level="project" />

@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent> <!--继承-->
-        <artifactId>SOA</artifactId>
+    <parent> 
+        <artifactId>em-parent</artifactId>
         <groupId>com.em</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../SOA/pom.xml</relativePath>
+        <relativePath>../em-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>em-manager</artifactId>
+    <artifactId>em-content</artifactId>
     <packaging>pom</packaging>
 
     <repositories>
@@ -34,11 +34,9 @@
         </dependency>
     </dependencies>
 
-    <modules> <!--子模块-->
-        <module>em-manager-pojo</module>
-        <module>em-manager-dao</module>
-        <module>em-manager-interface</module>
-        <module>em-manager-service</module>
+    <modules>
+        <module>em-content-interface</module>
+        <module>em-content-service</module>
     </modules>
 
     <build>
@@ -50,7 +48,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8080</port>
+                    <port>8082</port>
                 </configuration>
             </plugin>
         </plugins>
