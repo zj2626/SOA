@@ -6,7 +6,9 @@
 
 ####最初时间: 2017-05-21
 
-####涉及技术: spring, springmvc, mybatis, dubbo, zookeeper
+####涉及技术: spring, springmvc, mybatis, dubbo, zookeeper, redis
+
+####学习视频及源码: http://pan.baidu.com/s/1c19NQXa 密码: 4whq
 
 ####启动:
 
