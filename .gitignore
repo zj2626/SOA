@@ -5,6 +5,7 @@
 **/logs
 **/.settings
 #任意目录下的.idea文件
+.idea
 **/.idea
 **/rebel.xml
 #任意target目录
