@@ -1,4 +1,4 @@
-import common.FastDFSClient;
+import common.util.FastDFSClient;
 import org.csource.common.MyException;
 import org.csource.fastdfs.*;
 import org.junit.Test;

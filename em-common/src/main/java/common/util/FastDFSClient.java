@@ -1,4 +1,4 @@
-package common;
+package common.util;
 
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;

@@ -1,8 +1,8 @@
 package com.em.service;
 
 import com.em.pojo.TbItem;
-import common.EasyUIDdataGridResult;
-import common.JsonResult;
+import common.util.EasyUIDdataGridResult;
+import common.util.JsonResult;
 
 /**
  * Created by zj on 2017/5/22.

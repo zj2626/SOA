@@ -1,6 +1,6 @@
 package com.em.service;
 
-import common.EasyUITreeNode;
+import common.util.EasyUITreeNode;
 
 import java.util.List;
 

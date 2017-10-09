@@ -9,9 +9,9 @@ import com.em.pojo.TbItemExample.Criteria;
 import com.em.service.ItemService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import common.EasyUIDdataGridResult;
-import common.IDUtils;
-import common.JsonResult;
+import common.util.EasyUIDdataGridResult;
+import common.util.IDUtils;
+import common.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

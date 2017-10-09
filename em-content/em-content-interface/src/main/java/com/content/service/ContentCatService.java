@@ -1,8 +1,7 @@
 package com.content.service;
 
-import common.EasyUIDdataGridResult;
-import common.EasyUITreeNode;
-import common.JsonResult;
+import common.util.EasyUITreeNode;
+import common.util.JsonResult;
 
 import java.util.List;
 

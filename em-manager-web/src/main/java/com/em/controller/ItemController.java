@@ -2,8 +2,8 @@ package com.em.controller;
 
 import com.em.pojo.TbItem;
 import com.em.service.ItemService;
-import common.EasyUIDdataGridResult;
-import common.JsonResult;
+import common.util.EasyUIDdataGridResult;
+import common.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

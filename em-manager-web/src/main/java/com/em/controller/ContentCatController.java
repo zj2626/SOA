@@ -1,8 +1,8 @@
 package com.em.controller;
 
 import com.content.service.ContentCatService;
-import common.EasyUITreeNode;
-import common.JsonResult;
+import common.util.EasyUITreeNode;
+import common.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
