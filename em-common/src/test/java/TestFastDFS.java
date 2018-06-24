@@ -34,8 +34,7 @@ public class TestFastDFS {
             for (String s : str) {
                 System.out.println(s);
             }
-
-        } catch (IOException | MyException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -49,6 +48,5 @@ public class TestFastDFS {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
