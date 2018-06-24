@@ -6,41 +6,50 @@
 	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
     <!--jedis连接redis配置之单机版配置-->
-    <!--<bean class="redis.clients.jedis.JedisPool" id="jedisPool">
-        <constructor-arg name="host" value="115.159.40.33"/>
-        <constructor-arg name="port" value="6379"/>
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="300"/> <!-- 最大能够保持idel状态的对象数  -->
+        <property name="maxTotal" value="60000"/> <!-- 最大分配的对象数 -->
+        <property name="testOnBorrow" value="true"/> <!-- 当调用borrow Object方法时，是否进行有效性检查 -->
+    </bean>
+
+    <bean class="redis.clients.jedis.JedisPool" id="jedisPool">
+        <constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+        <constructor-arg name="host" value="127.0.0.1"/>
+        <constructor-arg name="port" value="6379" type="int"/>
+        <constructor-arg name="timeout" value="2000" type="int"/>
+        <constructor-arg name="password" value="fangshuoit"/>
     </bean>
 
     <bean class="common.jedis.JedisClientPool" id="jedisClientPool">
         <property name="jedisPool" ref="jedisPool"/>
-    </bean>-->
+    </bean>
 
     <!--jedis连接redis配置之集群版配置-->
-    <bean class="redis.clients.jedis.JedisCluster" id="jedisCluster">
+    <!--<bean class="redis.clients.jedis.JedisCluster" id="jedisCluster">
         <constructor-arg name="nodes">
             <set>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7001"/>
                 </bean>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7002"/>
                 </bean>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7003"/>
                 </bean>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7004"/>
                 </bean>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7005"/>
                 </bean>
                 <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="115.159.40.33"/>
+                    <constructor-arg name="host" value="192.168.25.128"/>
                     <constructor-arg name="port" value="7006"/>
                 </bean>
             </set>
@@ -49,6 +58,6 @@
 
     <bean class="common.jedis.JedisClientCluster" id="jedisClientCluster">
         <property name="jedisCluster" ref="jedisCluster"/>
-    </bean>
+    </bean>-->
 
 </beans>

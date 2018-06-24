@@ -4,11 +4,11 @@
 
 ####工具: IntelliJ IDEA
 
-####最初时间: 2017-05-21
+####创建时间: 2017-05-21
 
-####涉及技术: spring, springmvc, mybatis, dubbo, zookeeper, redis
+####涉及技术: spring, springmvc, mybatis, dubbo, zookeeper, redis, fastdfs
 
-####学习视频及源码: http://pan.baidu.com/s/1c19NQXa 密码: 4whq
+####学习视频及源码: 链接：https://pan.baidu.com/s/184E83JpZ5SxaR6TECXGimA 密码：w6ey
 
 ####启动:
 
@@ -18,16 +18,15 @@
 
 
 >    2. 模块介绍:
-```aidl
-        1.SOA: 根模块, common和manager继承了该模块, 此模块中配置了所有的依赖的版本信息(并非依赖本身)
-        2.common:工具类模块,存放全局工具类
-        3.manager: 项目模块
-        3.1: dao: 持久层,直接操作数据库
-        3.2: interface: service接口层
-        3.3: pojo: 持久化类,与数据库中表一一对应
-        3.4: service: 业务操作层, 实现接口
-        4: web: 控制层, 书写controller (目前web层已经不在manager模块下, 下面图片有误)
-        5.generatorSqlmapCustom:  MyBatis逆向工程生成pojo的简单工具
+```text
+        1. SOA: 根模块, common,parent和manager继承了该模块, 此模块中配置了所有的依赖的版本信息(并非依赖本身)
+        2. common:工具类模块,存放全局工具类
+        3. manager: 后台模块父工程
+        4. em-manager-web: 后台模块控制器
+        5: parent: 前台模块父工程
+        6: em-content: 前台模块业务层
+        7: em-portal-web: 前台模块控制器
+        8. generatorSqlmapCustom:  MyBatis逆向工程生成pojo的简单工具
 ```
 
         

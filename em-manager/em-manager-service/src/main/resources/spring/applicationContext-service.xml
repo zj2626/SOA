@@ -17,7 +17,7 @@
     <!-- 发布方信息 -->
     <dubbo:application name="em-manager"/>
     <!-- 使用zookeepeer实现注册 配置zookeepeer 如果是zookeepeer集群, 地址用,分隔-->
-    <dubbo:registry protocol="zookeeper" address="zookeeper://115.159.40.33:2181"/>
+    <dubbo:registry protocol="zookeeper" address="zookeeper://192.168.25.128:2181"/>
     <!-- 使用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880"/>
     <!-- 要暴露的服务接口 -->
