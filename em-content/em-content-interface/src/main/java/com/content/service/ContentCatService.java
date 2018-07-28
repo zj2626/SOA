@@ -1,5 +1,7 @@
 package com.content.service;
 
+import com.em.pojo.TbContent;
+import common.util.EasyUIDdataGridResult;
 import common.util.EasyUITreeNode;
 import common.util.JsonResult;
 
@@ -13,4 +15,7 @@ public interface ContentCatService {
 
     JsonResult addContentCategory(long parentId, String name);
 
+    EasyUIDdataGridResult getContentCategoryList(Long categoryId, int page, int rows);
+
+    List<TbContent> demo(Long categoryId, int page, int rows);
 }

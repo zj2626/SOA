@@ -1,6 +1,8 @@
 package com.em.controller;
 
 import com.content.service.ContentCatService;
+import com.em.pojo.TbContent;
+import common.util.EasyUIDdataGridResult;
 import common.util.EasyUITreeNode;
 import common.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,19 @@ public class ContentCatController {
 
     @RequestMapping(value = "/content/category/create", method = RequestMethod.POST)
     @ResponseBody
-    public JsonResult createCategory(Long parentId, String name){
+    public JsonResult createCategory(Long parentId, String name) {
         return service.addContentCategory(parentId, name);
+    }
+
+    @RequestMapping("/content/query/list")
+    @ResponseBody
+    public EasyUIDdataGridResult queryList(Long categoryId, Integer page, Integer rows) {
+        return service.getContentCategoryList(categoryId, page, rows);
+    }
+
+    @RequestMapping("/content/demo")
+    @ResponseBody
+    public List<TbContent> queryListDemo() {
+        return service.demo(89L, 1, 20);
     }
 }
