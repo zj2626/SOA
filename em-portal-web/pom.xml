@@ -10,7 +10,6 @@
     <artifactId>em-portal-web</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>em-portal-web Maven Webapp</name>
 
     <dependencies>
         <dependency>

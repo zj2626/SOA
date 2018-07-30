@@ -23,7 +23,7 @@ public class JedisTest {
 
         try {
             jedis = new Jedis("127.0.0.1", 6379);
-            jedis.auth("fangshuoit");//没有密码则不需要
+            jedis.auth("123456");//没有密码则不需要
 
             //使用Jedis操作redis
 //        jedis.set("key_one", "my first test2");
@@ -50,7 +50,7 @@ public class JedisTest {
         try {
             jedisPool = new JedisPool("127.0.0.1", 6379);
             jedis = jedisPool.getResource();
-            jedis.auth("fangshuoit");
+            jedis.auth("123456");
 
             //操作
             String value = jedis.get("key_one");

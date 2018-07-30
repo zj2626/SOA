@@ -9,7 +9,6 @@
     <artifactId>em-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>em-portal-web Maven Webapp</name>
 
     <dependencies>
 
